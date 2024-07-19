@@ -124,7 +124,7 @@
         padding-block: 64px 144px;
         margin-bottom: 64px;
         @include m.tab{
-            padding-block:64px 64px;
+            padding-block:40px 64px;
         }
 
         .commission_container {
@@ -143,6 +143,7 @@
                 }
                 @include m.sp{
                     font-size: 1rem;
+                    padding-bottom:0;
                 }
             }
 
