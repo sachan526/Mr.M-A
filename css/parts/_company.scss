@@ -1,0 +1,82 @@
+@use 'mixin' as m;
+// 会社概要
+#company_overview {
+    background: rgb(51, 143, 209);
+    background: linear-gradient(90deg, rgba(51, 143, 209, 1) 0%, rgba(52, 106, 173, 1) 48%, rgba(52, 77, 144, 1) 100%);
+    padding-block: 80px;
+    @include m.sp{
+        padding-block: 40px;
+    }
+    .section_title{
+        span{
+            color:#FFF;
+        }
+        ::before{
+            background-color:#FFF;
+        }
+    }
+    dl {
+        display: flex;
+        flex-wrap: wrap;
+        color: #FFF;
+        max-width:800px;
+        margin-inline: auto;
+        padding-block:80px;
+        padding-inline:3%;
+        @include m.tab{
+            padding-block:40px;
+        }
+        @include m.sp{
+            flex-direction: column;
+            padding-block:0 40px;
+        }
+        dt,dd{
+            padding-block: 30px;
+            border-bottom: 1px solid #FFF;
+            padding-left: 30px;
+            &:first-of-type{
+                border-top:1px solid #FFF;
+                @include m.sp{
+                    border-top:none;
+                }
+            }
+            @include m.sp{
+                border-bottom:none;
+                padding-block:0;
+                padding-left:8px;
+            }
+            
+        }
+
+        dt {
+            width: 40%;
+            font-size: 1.25rem;
+            font-weight: bold;
+            &:first-child{
+                @include m.sp{
+                    border-top:1px solid #FFF;
+                    width:90%;
+                    margin-inline:auto;
+                }
+            }
+            @include m.sp{
+                font-size: 1rem;
+                width:90%;
+                    margin-inline:auto;
+                    padding-top:8px;
+            }
+            
+            
+        }
+
+        dd {
+            width: 60%;
+            @include m.sp{
+                border-bottom:1px solid #FFF;
+                width:90%;
+                    margin-inline:auto;
+                    padding-bottom:8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,234 @@
+@use 'mixin' as m;
+// その他のサポート
+#other_support {
+    margin-block: 80px;
+    @include m.sp{
+        margin-block: 40px;
+    }
+
+    .other_support_title {
+        .other_support_title_visual {
+            display: flex;
+
+            img {
+                width: 30%;
+                height: 240px;
+                object-fit: cover;
+                clip-path: polygon(0 0, 100% 0, 69% 100%, 0% 100%);
+                margin-right: -150px;
+                position: absolute;
+                z-index: 10;
+                @include m.tab{
+                    height:200px;
+                }
+                @include m.sp{
+                    height:160px;
+                }
+            }
+
+
+            .other_support_box {
+                width: 100%;
+                height: 240px;
+                background: #344D90;
+                position: relative;
+                @include m.tab{
+                    height:200px;
+                }
+                @include m.sp{
+                    height:160px;
+                }
+
+                p {
+                    position: absolute;
+                    top: 50%;
+                    right: 20%;
+                    transform: translateY(-50%);
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    color: #FFF;
+                    z-index: 10;
+                    @include m.pc{
+                        right:10%;
+                    }
+                    @include m.tab{
+                        right:5%;
+                        font-size: 2rem;
+                    }
+                    @include m.sp{
+                        font-size: 1rem;
+                        right:3%;
+                    }
+                }
+            }
+        }
+    }
+
+    .other_support {
+        padding-top:64px;
+        @include m.tab{
+            padding-top:32px;
+        }
+        @include m.sp{
+            padding-top:24px;
+        }
+        .other_support_comment {
+            font-size: 1.24rem;
+            font-weight: bold;
+            text-align: center;
+            padding-block: 40px;
+            @include m.tab{
+                padding-inline:3%;
+                font-size: 1rem;
+            }
+        }
+
+        .other_support_figure {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: #DBF3F7;
+            margin-inline: auto;
+            position: relative;
+            margin-top: 120px;
+            @include m.tab{
+                width:300px;
+                height:300px;
+            }
+            @include m.sp{
+            width:100%;
+            border-radius: 0;
+            margin-top:24px;
+
+            }
+
+            img {
+                width: 230px;
+                position: absolute;
+                top: 125px;
+                left: 125px;
+                @include m.tab{
+                    width:150px;
+                    top:20%;
+                    left:25%;
+                }
+                @include m.sp{
+                    width:100px;
+                    top:65%;
+                    left:65%;
+                    z-index: 20;
+                }
+            }
+
+            .other_support_content {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: #344D90;
+                @include m.tab{
+                    width:150px;
+                    height:150px;
+                }
+                @include m.sp{
+                    width:70%;
+                    height:40px;
+                    border-radius: 50px;
+                }
+
+                p {
+                    width:100%;
+                    color: #FFF;
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform:translate(-50%,-50%);
+                    text-align: center;
+                    @include m.sp{
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .other_support_content_top {
+                position: absolute;
+                top: -100px;
+                left: 50%;
+                transform: translateX(-50%);
+                @include m.sp{
+                    top:16px;
+                    left:8px;
+                    transform: none;
+                }
+            }
+
+            .other_support_content_right_top {
+                position: absolute;
+                top: 86px;
+                right: -95px;
+                @include m.tab{
+                    top:29px;
+                    right:-79px;
+                }
+                @include m.sp{
+                    top:72px;
+                    right:auto;
+                    left:8px;
+                }
+            }
+
+            .other_support_content_right_bottom {
+                position: absolute;
+                bottom: -52px;
+                right: -18px;
+                @include m.sp{
+                    top:128px;
+                    right:auto;
+                    left:8px;
+
+                }
+            }
+
+            .other_support_content_left_bottom {
+                position: absolute;
+                bottom: -52px;
+                left: -18px;
+                @include m.sp{
+                    top:184px;
+                    left:8px;
+                }
+            }
+
+
+            .other_support_content_left_top {
+                position: absolute;
+                top: 86px;
+                left: -95px;
+                @include m.tab{
+                    top:29px;
+                    left:-79px;
+                }
+                @include m.sp{
+                    top:240px;
+                    left:8px;
+                }
+            }
+        }
+
+        .other_support_message {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            padding-block: 160px 120px;
+            @include m.tab{
+                padding-inline:3%;
+                font-size: 1.25rem;
+            }
+            @include m.sp{
+                font-size: 1rem;
+                padding-block:24px;
+            }
+        }
+    }
+}

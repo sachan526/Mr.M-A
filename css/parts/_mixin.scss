@@ -1,0 +1,34 @@
+$pc: 1080px;
+$tab: 768px;
+$sp: 500px;
+
+@mixin dis {
+    @media (min-width:($pc)){
+        @content;
+    }
+        
+    }
+
+@mixin pc {
+    @media (max-width: ($pc)) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: ($tab)) {
+        @content;
+    }
+}
+
+@mixin ls{
+    @media (orientation: landscape)and(max-width: 1000px){
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
