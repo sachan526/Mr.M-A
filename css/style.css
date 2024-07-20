@@ -883,6 +883,7 @@ footer .copyright {
 @media (max-width: 500px) {
   #mv {
     background-image: url(../img/mv_sp.jpg);
+    height: 80vh;
   }
 }
 @media (orientation: landscape) and (max-width: 1000px) {
@@ -1019,6 +1020,12 @@ footer .copyright {
     bottom: -160px;
   }
 }
+@media (max-width: 500px) {
+  #mv .selection_button {
+    height: 20vh;
+    top: 80vh;
+  }
+}
 #mv .selection_button .button {
   text-align: center;
   background-color: #344D90;
@@ -1109,7 +1116,7 @@ footer .copyright {
   #chosen_reason .reasons {
     width: 100%;
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
   }
 }
 #chosen_reason .reasons .reason {
@@ -1123,6 +1130,12 @@ footer .copyright {
   #chosen_reason .reasons .reason {
     width: 80%;
     margin-inline: auto;
+  }
+}
+@media (max-width: 500px) {
+  #chosen_reason .reasons .reason {
+    width: 90%;
+    height: 160px;
   }
 }
 #chosen_reason .reasons .reason .number {
@@ -1148,9 +1161,12 @@ footer .copyright {
 }
 @media (max-width: 500px) {
   #chosen_reason .reasons .reason .reason_content span {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
   }
+}
+#chosen_reason .reasons .reason .reason_content .free_big {
+  font-size: 2.5rem;
 }
 
 #business_disposal {
@@ -1190,7 +1206,8 @@ footer .copyright {
 }
 @media (max-width: 500px) {
   #business_disposal .cause_getting_box .cause_getting_low {
-    padding-inline: 3%;
+    padding-inline: 4%;
+    padding-block: 40px 64px;
   }
 }
 #business_disposal .cause_getting_box .cause_getting_low h3 {
@@ -1391,7 +1408,7 @@ footer .copyright {
   #business_disposal .cause_getting_box .cause_getting_low_answer .cause_getting_low_answer_contents .cause_getting_low_answer_content {
     height: 400px;
     width: 97%;
-    padding-inline: 3%;
+    padding-inline: 4%;
   }
 }
 #business_disposal .cause_getting_box .cause_getting_low_answer .cause_getting_low_answer_contents .cause_getting_low_answer_content .cause_getting_low_answer_heading {
@@ -2130,7 +2147,7 @@ footer .copyright {
 }
 @media (max-width: 768px) {
   #business_acquisition .commission_table {
-    padding-block: 64px 64px;
+    padding-block: 40px 64px;
   }
 }
 #business_acquisition .commission_table .commission_container {
@@ -2152,6 +2169,7 @@ footer .copyright {
 @media (max-width: 500px) {
   #business_acquisition .commission_table .commission_container .commission_table_title {
     font-size: 1rem;
+    padding-bottom: 0px;
   }
 }
 #business_acquisition .commission_table .commission_container dl {

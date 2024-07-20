@@ -6,7 +6,6 @@
     padding-top: 112px;
     padding-bottom: 80px;
 
-
     .sentence1 {
         position: relative;
         z-index: -10;
@@ -35,16 +34,16 @@
         .cause_getting_low {
             border: 1px double #344D90;
             margin-block: 64px;
-            padding-block: 64px;
+            padding-block:64px;
             padding-inline: 24px;
             text-align: center;
             position: relative;
             background-color: #F9F9F9;
 
             @include m.sp {
-                padding-inline: 3%;
+                padding-inline: 4%;
+                padding-block:40px 64px;
             }
-
 
             h3 {
                 width: 424px;
@@ -66,7 +65,6 @@
                     padding-block: 8px;
                     left: 50%;
                     transform: translateX(-50%);
-
                 }
 
                 span {
@@ -92,7 +90,6 @@
                     font-size: 1rem;
                 }
             }
-
 
             .small_comment {
                 display: table;
@@ -243,7 +240,7 @@
                     @include m.sp {
                         height: 400px;
                         width: 97%;
-                        padding-inline: 3%;
+                        padding-inline: 4%;
                     }
 
                     .cause_getting_low_answer_heading {
@@ -370,7 +367,6 @@
             background-color: #DBF3F7;
             padding-block: 40px;
             padding-inline: 3%;
-
 
             h3 {
                 max-width: 800px;
@@ -522,9 +518,10 @@
             }
 
             .propose_solution_message_blue {
-                @include m.sp{
+                @include m.sp {
                     font-size: 1rem;
                 }
+
                 span {
                     font-size: 2rem;
                     font-weight: bold;
@@ -569,7 +566,8 @@
                 font-size: 1.25rem;
                 font-weight: bold;
                 text-align: center;
-                @include m.sp{
+
+                @include m.sp {
                     font-size: 1rem;
                 }
             }
@@ -593,9 +591,11 @@
             width: 240px;
             margin-inline: auto;
             padding-block: 64px;
-            @include m.tab{
-                width:160px;
+
+            @include m.tab {
+                width: 160px;
             }
+
             @include m.sp {
                 width: 150px;
                 padding-block: 40px;
@@ -607,10 +607,12 @@
             font-size: 2rem;
             font-weight: bold;
             text-align: center;
+
             @include m.pc {
                 font-size: 1.5rem;
             }
-            @include m.tab{
+
+            @include m.tab {
                 font-size: 1.25rem;
             }
         }
@@ -642,17 +644,19 @@
                 align-items: end;
                 top: 24px;
             }
-            @include m.sp{
+
+            @include m.sp {
                 flex-direction: column;
                 align-items: center;
-                gap:24px;
+                gap: 24px;
             }
 
             p {
                 width: 70%;
                 text-decoration: underline;
-                @include m.sp{
-                    width:100%;
+
+                @include m.sp {
+                    width: 100%;
                 }
             }
 
@@ -695,9 +699,10 @@
                 vertical-align: middle;
                 box-sizing: border-box;
                 opacity: 0;
-                @include m.sp{
-                    height:400px;
-                    max-width:85%;
+
+                @include m.sp {
+                    height: 400px;
+                    max-width: 85%;
                 }
 
                 .achievement_content_itself {
@@ -709,13 +714,15 @@
                     .achievement_message {
                         font-size: 1.25rem;
                         font-weight: bold;
-                        @include m.tab{
+
+                        @include m.tab {
                             font-size: 1rem;
                         }
+
                         @include m.sp {
                             display: none;
                         }
-                        
+
                         span {
                             font-size: 2rem;
 
@@ -738,7 +745,7 @@
                         span {
                             @include m.sp {
                                 font-size: 1.25rem;
-                                color:#344D90;
+                                color: #344D90;
                             }
                         }
                     }
@@ -760,9 +767,10 @@
                     position: absolute;
                     top: 0;
                     right: -56px;
-                    @include m.sp{
+
+                    @include m.sp {
                         border-width: 200px 0px 200px 40px;
-                        right:-40px;
+                        right: -40px;
                     }
                 }
             }
@@ -796,9 +804,10 @@
                     position: absolute;
                     top: 0;
                     left: -56px;
-                    @include m.sp{
+
+                    @include m.sp {
                         border-width: 200px 40px 200px 0px;
-                    left:-40px;
+                        left: -40px;
                     }
                 }
             }
@@ -826,9 +835,11 @@
         font-weight: bold;
         padding-block: 65px;
         padding-inline: 3%;
-@include m.tab{
-    font-size: 1.25rem;
-}
+
+        @include m.tab {
+            font-size: 1.25rem;
+        }
+
         @include m.sp {
             font-size: 1rem;
             padding-inline: 3%;

@@ -12,14 +12,18 @@
     @include m.pc {
         background-image: url(../img/sp_mv.jpg);
     }
-    @include m.tab{
-        height:100vh;
+
+    @include m.tab {
+        height: 100vh;
     }
-    @include m.sp{
+
+    @include m.sp {
         background-image: url(../img/mv_sp.jpg);
+        height:80vh;
     }
-    @include m.ls{
-        height:calc(100vh + 300px);
+
+    @include m.ls {
+        height: calc(100vh + 300px);
     }
 
     .copy {
@@ -36,12 +40,15 @@
             left: 50%;
             transform: translateX(-50%);
         }
-        @include m.tab{
-            bottom:8%;
+
+        @include m.tab {
+            bottom: 8%;
         }
-        @include m.ls{
-            bottom:7%;
+
+        @include m.ls {
+            bottom: 7%;
         }
+
         h2 {
             font-size: 4rem;
             color: #FFF;
@@ -58,35 +65,38 @@
         p {
             font-size: 1.25rem;
             color: #FFF;
-            // padding-top: 30px;
 
             @include m.sp {
                 font-size: 1rem;
             }
         }
     }
-    .successful_btn{
-        display:inline-block;
-        width:300px;
+
+    .successful_btn {
+        display: inline-block;
+        width: 300px;
         font-size: 1.25rem;
         border-radius: 15px 0 0 15px;
         text-align: center;
-        padding-block:30px;
+        padding-block: 30px;
         text-decoration: none;
         background-color: #344D90;
         color: #FFF;
-        position:absolute;
-        top:120px;
-        right:0;
-        @include m.tab{
-            width:250px;
+        position: absolute;
+        top: 120px;
+        right: 0;
+
+        @include m.tab {
+            width: 250px;
             font-size: 1rem;
-            top:73px;
-            padding-block:16px;
+            top: 73px;
+            padding-block: 16px;
         }
-        @include m.sp{
+
+        @include m.sp {
             display: none;
         }
+
         &::before {
             content: '';
             position: absolute;
@@ -100,30 +110,35 @@
             border-right: 3px solid #fff;
             transform: rotate(45deg);
         }
+
         &:hover {
             background-color: #4761a9;
         }
     }
-    .successful_btn_sp{
+
+    .successful_btn_sp {
         display: none;
-        @include m.sp{
+
+        @include m.sp {
             display: inline-block;
             text-align: center;
-            background-color:#344D90;
+            background-color: #344D90;
             border-radius: 15px 0 0 15px;
             font-size: 1rem;
             color: #FFF;
             text-decoration: none;
             position: absolute;
-            top:73px;
-            right:0;
+            top: 73px;
+            right: 0;
             width: 176px;
             padding-block: 16px;
+
             &:hover {
                 background-color: #4761a9;
             }
         }
     }
+
     .selection_button {
         width: 100%;
         display: flex;
@@ -136,6 +151,10 @@
             flex-direction: column;
             gap: 8px;
             bottom: -160px;
+        }
+        @include m.sp{
+            height:20vh;
+            top:80vh;
         }
 
         .button {
@@ -153,17 +172,18 @@
                 padding-block: 8px;
                 margin-inline: auto;
             }
-            @include m.sp{
-                width:90%;
+
+            @include m.sp {
+                width: 90%;
             }
 
             span {
                 font-size: 1.5rem;
-                @include m.sp{
+
+                @include m.sp {
                     font-size: 1.25em;
                 }
             }
-
 
             &::before {
                 content: "";
@@ -214,11 +234,10 @@
         padding-top: 218px;
     }
 
-
     .reasons {
         display: flex;
         flex-wrap: wrap;
-        max-width:800px;
+        max-width: 800px;
         justify-content: center;
         gap: 16px;
         margin-inline: auto;
@@ -226,9 +245,9 @@
         padding-bottom: 64px;
 
         @include m.tab {
-            width:100%;
+            width: 100%;
             flex-direction: column;
-            gap: 24px;
+            gap: 32px;
         }
 
         .reason {
@@ -241,6 +260,10 @@
             @include m.tab {
                 width: 80%;
                 margin-inline: auto;
+            }
+            @include m.sp{
+                width:90%;
+                height:160px;
             }
 
             .number {
@@ -264,13 +287,16 @@
                 span {
                     font-size: 2rem;
                     background: linear-gradient(transparent 70%, #ffff00 30%);
-                    @include m.sp{
-                        font-size: 1.25rem;
+
+                    @include m.sp {
+                        font-size: 1.5rem;
                         font-weight: bold;
                     }
                 }
+                .free_big{
+                    font-size: 2.5rem;
+                }
             }
         }
-        
     }
 }
